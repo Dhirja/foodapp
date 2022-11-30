@@ -23,11 +23,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.leftdiv{
+  display: flex;
+  margin-top: 15px;
+  gap: 4px;
 }
-
+.App-link {
+  color: #2389a5;
+}
+button{
+  background-color: rgb(73, 141, 185);
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
