@@ -1,0 +1,14 @@
+.chekout>div{
+    font-size: larger;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(201, 187, 187);
+    margin: auto;
+    margin-top: 80px;
+    height: 90px;
+    color: rgb(75, 57, 57);
+}
+p{
+   margin-left: -350px;
+   font-weight: 600;
+   color: rgb(95, 85, 85);
+}

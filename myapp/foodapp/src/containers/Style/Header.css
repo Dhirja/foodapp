@@ -1,0 +1,26 @@
+.header{
+   
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid rgb(20, 0, 0); */
+        padding: 7px;
+        background-color: rgb(111, 62, 226);
+        box-shadow: 2px 2px 2px 2px rgb(155, 141, 141);
+    
+}
+.navdiv{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 85%;
+        color: white;
+        
+}
+.gotomenu{
+        background-color: rgb(80, 80, 212);
+        color: white;
+        width: 180px;
+        height: 39px;
+        border-radius: 6px;
+        border: none;
+}
