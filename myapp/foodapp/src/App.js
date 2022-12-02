@@ -18,35 +18,39 @@ function App() {
     <div className="App">
   <div className="header">
     <div className="navdiv">
-        
-             <Link to={"/"}><h3>Food Restaurant</h3></Link>
-             
-            <div className='leftdiv'>
-                <Link to={"/login"}><button>Login</button></Link>
-                <Link to={"/signup"}><button>Sign-up</button></Link>
-                
-               
-               <Link to={'/cartorder'}><i
-            className='fa fa-shopping-cart'
-            aria-hidden='true'
-            onClick={showHideCart}
-            />
-            </Link>
+             {userArr.name ?
+            <div className='navdiv'>
+             <Link to={"/header"}><h3>Food Restaurant</h3></Link>
+
+             <div className='leftdiv'>
+             <Link to={'/cartorder'}><i
+                className='fa fa-shopping-cart'
+                aria-hidden='true'
+                onClick={showHideCart}
+              />
+             </Link>
           
           {cartItems.length > 0 && (
             <div className='item__count'>
               <span>{cartItems.length}</span>
             </div>
           )}
+          </div>
+          </div>
+             :
+            <div className='leftdiv'>
+                <Link to={"/login"}><button>Login</button></Link>
+                <Link to={"/"}><button>Sign-up</button></Link>  
             </div>
+         }
          
       </div>
   </div>
 
       <Routes>
-              <Route path='/' exact element={<Header />}/>
+              <Route path='/' exact element={<Signup/>}/>
+              <Route path='/header' exact element={<Header />}/>
               <Route path='/fooditem' exact element={<Fooditem/>}/>
-              <Route path='/signup' exact element={<Signup/>}/>
               <Route path='/login' exact element={<Login/>}/>
               <Route path='/cartorder' exact element={<OrderSum/>}/>
               <Route path='/checkout' exact element={<Checkout/>}/>
