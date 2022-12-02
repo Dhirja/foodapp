@@ -29,7 +29,7 @@ const Login = () => {
             if((email==userArr.email) && (password === userArr.password)){
 
                     alert("login successfull")
-                    navigate("/")    
+                    navigate("/header")    
             } else {
                 alert("invlid input")
             }
@@ -43,7 +43,7 @@ const Login = () => {
             <input type="password" name="password" value={user.password} onChange={handleChange}  placeholder="Enter your Password" ></input>
             <div className="button" onClick={login}>Login</div>
             <div>or</div>
-            <div className="button" onClick={() =>navigate("/signup")}>Sign-up</div>
+            <div className="button" onClick={() =>navigate("/")}>Sign-up</div>
         </div>
     )
 }
